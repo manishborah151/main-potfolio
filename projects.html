@@ -76,7 +76,7 @@
       <div class="video-grid">
         <div class="video-item">
           <div class="video-wrap">
-            <iframe src="vids/VID_93570214_210736_591.mp4" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="vids/VID_93570214_210736_591.mp4" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
           </div>
         </div>
         <div class="video-item">
@@ -183,6 +183,47 @@
 
 
   <script >
+      
+      function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('video-wrap', {
+      videoId: 'ZHiVC_51KkI', // YouTube Video ID
+      width: 560, // Player width (in px)
+      height: 316, // Player height (in px)
+      playerVars: {
+      autoplay: 1, // Auto-play the video on load
+      controls: 1, // Show pause/play buttons in player
+      showinfo: 0, // Hide the video title
+      modestbranding: 1, // Hide the Youtube Logo
+      loop: 1, // Run the video in a loop
+      fs: 0, // Hide the full screen button
+      cc_load_policty: 0, // Hide closed captions
+      iv_load_policy: 3, // Hide the Video Annotations
+      autohide: 0 // Hide video controls when playing
+    },
+
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      },
+      onStateChange: function(e) {
+        if (e.data === YT.PlayerState.ENDED) {
+          player.playVideo(); 
+        }
+      }
+    }
+  });
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 function openCity(evt, cityName) {
   var i, LeftMenucontent, LeftMenulinks;
  LeftMenucontent = document.getElementsByClassName("LeftMenucontent");
