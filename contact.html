@@ -50,7 +50,7 @@ body{
       <p>(+91)6001419617</p>
     </div>
 
-    <div class="main2 forms">
+    <div class="main2 forms" onsubmit="sendEmail(); reset(); return false">
       <form action="">
         <input type="fname" name="fname" id="fname" placeholder="First Name">
         <br>
@@ -82,8 +82,22 @@ body{
 </div>
 
 
-
-
-<script src="java.js"> </script>
+<SCRipt src=" https://smtpjs.com/v3/smtp.js"></SCRipt>
+<script src="java.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "manishborah151@gmail.com",
+    Password : "MINIcon@#151",
+    To : 'manishborah151@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "new contact form Enquiry",
+    Body : "And this is the body"
+    }).then(
+    message => alert(message)
+);
+  }
+</script>
 </body>
 </html>
