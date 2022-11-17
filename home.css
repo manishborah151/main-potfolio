@@ -1,0 +1,618 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    height: 600px;
+    overflow-x: hidden;
+    background-image: linear-gradient(to left bottom, #8200d1, #6a06bb, #5207a5, #3c078f, #260579, #1c177f, #102283, #002c87, #004aa7, #0068c5, #0087e3, #00a7ff);
+    background-size: cover;
+    z-index: 1;
+  }
+  
+.myVideo {
+  position: fixed;
+    max-width: 1500px;
+    max-height: 795px;
+    top: -100px;
+    left: -10px;
+    
+}
+header{
+    top: 0;
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+    
+    
+   
+
+    
+}
+header  .logo{
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 90px;
+    position: absolute;
+
+}
+.logo:hover{
+  width: 65px;
+}
+nav{
+    top:60px ;
+    right: 90px;
+    position: absolute; 
+
+}
+.sticky{
+    transition: 700ms;
+    top:-25px;
+}
+.sticky .logo{
+  transition: 800ms;
+  left: 40px;
+}
+.sticky nav{
+  transition: 800ms;
+  right: 20px;
+}
+
+#banner{
+  display: block;
+    top:-130px ;
+    position: fixed;
+    right: 0px;
+   padding: 20px;
+  height: 80px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.715);
+  backdrop-filter: saturate(180%) blur(7px);
+  z-index: 95;
+
+}
+
+
+ ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing:3px;
+  text-transform: uppercase;
+}
+li a{
+  text-decoration:none ;
+  color: white;
+}
+
+.MenuItem {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: white;
+}
+
+.MenuItem:before, .MenuItem:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: rgb(255, 255, 255);
+}
+
+.MenuItem:before {
+  left: -2.5px;
+}
+.MenuItem:after {
+  right: 2.5px;
+  background: rgb(255, 255, 255);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.MenuItem:hover:before {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.MenuItem:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+
+
+
+
+.name{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin-left:90px ;
+    font-size:80px ;
+    position: relative;
+    
+}
+.line{
+    width:100px; 
+    height: 7px;
+    background-color: rgb(0, 174, 255);
+    border-radius: 20px;
+    border: none;
+    left: 90px;
+    position: relative;
+}
+.line2{
+  width:100px; 
+  height: 7px;
+  background-color:  rgb(0, 174, 255);
+  border-radius: 20px;
+  border: none;
+  left: 130px;
+  position: relative;
+}
+.main p{
+  color: white;
+  left: 130px;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+  font-family: Courier New;
+}
+.main{
+  float: left;
+  width: 50%; 
+  padding: 10px;
+}
+.main a{
+  text-decoration: none;
+  color: white;
+}
+
+.main2{
+  float: left;
+  width: 40%;
+  letter-spacing: 0.1em;
+  position: relative;
+  font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  color: white;
+
+  padding: 20px 40px;
+  font-size: 20px;
+}
+
+.row{
+  margin: 130px 0px 0px 0px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.skills{
+  height: 440px;
+  position:relative;
+
+}
+
+
+.skills h1{
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+
+
+
+
+  .container{
+      width: 100%;
+      height: 370px;
+      display: flex;
+      left: 90px;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 250px;
+    }
+
+    .flex{
+          color: white;
+          display: flex;
+          margin: 20px;
+          align-items: center;
+      }
+      .bar{
+          width: 645px;
+          height: 20px;
+          border: 1px solid rgb(0, 174, 255,0.2);
+          margin: 0 20px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+      }
+      .inside1{
+          border-radius: 30px;
+          width: 90%;
+          height: 20px;
+          background: rgb(0, 174, 255, 0.4);
+          animation: slide1 5s ease-in-out;
+      }
+      .inside2{
+        border-radius: 30px;
+        width: 80%;
+        height: 20px;
+        background: rgba(0, 174, 255, 0.4);
+          animation: slide2 5s ease-in-out;
+      }
+      .inside3{
+        border-radius: 30px;
+        width: 50%;
+        height: 20px;
+        background: rgb(0, 174, 255, 0.4);
+          animation: slide3 5s ease-in-out;
+      }
+  
+@keyframes slide1{
+  from{
+      width: 0;
+  }
+  to{
+      width: 90%;
+  }
+}
+@keyframes slide2{
+  from{
+      width: 0;
+  }
+  to{
+      width: 80%;
+  }
+}
+@keyframes slide3{
+  from{
+      width: 0;
+  }
+  to{
+      width: 50%;
+  }
+}
+.resume {
+    position: relative;
+    clear: both;
+}
+.resume li{
+  font-family: 'Roboto Condensed', sans-serif;  
+  text-decoration: none;
+  padding: 20px;
+  padding-bottom: 20px;
+  
+ 
+}
+.text:before, .text:after {
+   content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.text:hover{
+  color: #cacaca;
+}
+
+
+
+
+.text:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.prjText{ 
+  top: 140px;
+  text-align: center;
+  color: white;
+  font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  letter-spacing: 0.1em;
+  position: relative;
+  padding: 20px 40px;
+  font-size: 20px;
+}
+
+
+.projects{
+  top: 300px;
+  width: 100%;
+  position: absolute;
+
+}
+.LeftMenu {
+  float: left; 
+  width: 15%;
+  height: 400px;
+  position: fixed;
+}
+
+/* Style the buttons inside the LeftMenu */
+.LeftMenu button {
+  display: block;
+  background-color: none;
+  color: rgb(255, 255, 255);
+    padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.LeftMenu button:hover {
+  color: rgb(163, 163, 163);
+}
+
+/* Create an active/current "LeftMenu button" class */
+.LeftMenu button.active {
+  color: rgb(173, 88, 88);
+}
+
+/* Style the LeftMenu content */
+.LeftMenucontent {
+  float: left;
+  padding: 10px 10px 10px 182px;
+  width: 100%;
+  border-left: none;
+  height: 300px;
+  
+ 
+  
+}
+.LeftMenucontent li{
+  width: 100%;
+  height: 490px;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 60px;
+  color: white;
+  padding: 10px 5px 5px 10px;
+  cursor: pointer;
+}
+.LeftMenucontent li:hover{
+  transition: 1s;
+  background-color:  rgb(0, 174, 255,0.280);
+
+}
+.LeftMenucontent p{
+  padding: 0 0 0 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+}
+.LeftMenucontent img{
+  width: 100%;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+
+
+}
+p{
+  color: white;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 15px 5px 10px 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 90%;
+  padding: 0 4px;
+}
+.column1 .c3{
+  display: block;
+
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
+
+.video-item {
+  overflow: hidden;
+}
+
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-item iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+
+.video-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  height: 270px;
+  width: 480px;
+}
+
+@supports (display: grid) {
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0 -2em;
+  }
+  
+  .video-item {
+    margin-top: 0;
+  }
+  
+  .video-item iframe {
+    border: 0.125rem solid transparent;
+  }
+
+  .video-item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .video-item:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .video-item:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  
+  .video-item:nth-last-child(-n+1):first-child,
+  .video-item:nth-last-child(-n+1):first-child ~ .video-item {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+}
+
+
+
+
+.forms{
+  color: white;
+ background: rgba( 0, 174, 255, 0.10 );
+ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+ backdrop-filter: blur( 1.5px );
+ -webkit-backdrop-filter: blur( 1.5px );
+
+  border-radius: 20px;
+
+}
+.forms:hover{
+  background: rgba(45, 61, 105, 0.5);
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+}
+input ,textarea{
+
+  color: white;
+  height: 30px;
+  padding: 10px 5px ;
+  margin: 10px 5px;
+  /* From https://css.glass */
+background: rgba(58, 86, 115, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(18.6px);
+-webkit-backdrop-filter: blur(18.6px);
+border: 0.5px solid rgba(58, 86, 115, 0.235);
+  border-radius: 10px;
+  border: none;
+}
+
+input[type=fname], input[type=lname] {
+  width: 70%;
+}
+input[type=email]{
+  width: 100%;
+}
+input[type=submit]{
+  padding: 10px;
+  width: 100px;
+}
+input[type=submit]:hover{
+  transition: 0.4s;
+  background: rgba(146, 71, 175, 0.578);
+}
+textarea{
+  width: 100%;
+  
+  height: 141px;
+  border-radius: 5px;
+
+}
+.icons{
+  color: white;
+  position: absolute;
+  left: 130px;
+  right: auto;
+  top: 455px;
+  width: 40%;
+  clear: both;
+  
+}
+.icons .bi{
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+  transition: 0.6s;
+ 
+}
+
+.bi-instagram:hover{
+  color: rgba(255, 157, 0, 0.6);
+}
+.bi-youtube:hover{
+  color: rgba(255, 0, 0, 0.555);
+}
+.bi-github:hover{
+  color: rgba(90, 90, 90, 0.648);
+}
+.main a:hover{
+  color: #828282;
+  font-size: larger;
+  transition: 1s;
+}
+
+
+
+
