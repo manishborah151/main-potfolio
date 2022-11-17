@@ -466,8 +466,7 @@ p{
   padding-bottom: 56.25%;
 }
 
-.video-item video {
-  
+.video-item iframe {
   position: absolute;
   top: 0;
   right: 0;
@@ -499,7 +498,7 @@ p{
     margin-top: 0;
   }
   
-  .video-item video {
+  .video-item iframe {
     border: 0.125rem solid transparent;
   }
 
