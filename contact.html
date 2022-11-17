@@ -86,16 +86,19 @@ body{
 <script src="java.js"></script>
 <script>
   function sendEmail(){
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "manishborah151@gmail.com",
-    Password : "MINIcon@#151",
+   Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
     To : 'manishborah151@gmail.com',
     From : document.getElementById("email").value,
-    Subject : "new contact form Enquiry",
-    Body : "And this is the body"
-    }).then(
-    message => alert(message)
+    Subject : "This is the subject",
+    Body : "And this is the body",
+	Attachments : [
+	{
+		name : "smtpjs.png",
+		path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
+	}]
+}).then(
+  message => alert(message)
 );
   }
 </script>
