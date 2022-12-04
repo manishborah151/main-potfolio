@@ -49,9 +49,9 @@ a{
       <br>
       <hr class="line2">
       <br>
-      <p><a href="">manishborah151@gmail.com</a></p>
+      <p><a id="copyy" href="" onclick="CopyToClipboard('copyy');return false;">manishborah151@gmail.com</a></p>
       <br>
-      <p>(+91)6001419617</p>
+      <p><a id="copyyno" href="" onclick="CopyToClipboard2('copyyno');return false;">(+91)6001419617</a></p>
     </div>
 
     <div class="main2 forms">
@@ -85,6 +85,29 @@ a{
   </svg></a>
 </div>
 <script src="java.js"></script>
+    <script>
+  function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+alert("Copied: "+ r);
+}
+function CopyToClipboard2(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+alert("Copied: "+ r);
+}
+
+</script>
 
 </body>
 </html>
