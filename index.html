@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <title>MANISH BORAH</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="homeMobile.css">
+  
 </head>
 <style>
     body{
@@ -26,13 +28,17 @@
       <header>  
         <a href="index.html"><img class="logo" src="logos/PGlogo.png" alt="logo"></a>
       
-        <nav>
-            <ul>
-                <li><span class="MenuItem"><a href="about.html">About</a> </span></li>
-                <li><span class="MenuItem"><a href="projects.html">Projects</a></span></li>
-                <li><span class="MenuItem"><a href="contact.html">Contact</a></span></li>
-              </ul>
-        </nav>
+        <div class="dropdown">
+            <svg onclick="menushow()" class="dropbtn bi-list" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"  viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                  
+          <div id="myDropdown" class="dropdown-content">
+            <li><span class="MenuItem"><a href="about.html">About</a> </span></li>
+            <li><span class="MenuItem"><a href="projects.html">Projects</a></span></li>
+            <li><span class="MenuItem"><a href="contact.html">Contact</a></span></li>
+          </div>
+        </div>
     </header>
     
     <div class="row">
@@ -43,11 +49,32 @@
         <br>
         <hr class="line2">
         <br>
-        <p>front-end developer /</p>
+        <p>front-end <br> developer /</p>
         <p>photographer /</p>
         <p>video editor.</p>
     </div>
     </div>
+
+
+    <script>
+        function menushow() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
 
 
 </body>
