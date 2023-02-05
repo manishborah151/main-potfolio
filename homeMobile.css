@@ -1,0 +1,239 @@
+@media only screen and (max-width: 400px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .desktop{
+      display: none;
+    }
+   
+    
+    .mobile{
+      display: block;
+      top: 0px;
+    }
+    .sticky{
+      transition: 700ms;
+      top:0px;
+  }
+  .sticky .logo{
+    transition: 800ms;
+    left: 30px;
+  }
+
+    header .logo {
+        left: 30px;
+        top: 18px;
+    }
+
+    #banner{
+      height: 90px;}
+    
+.bi-list{
+    position: absolute;
+    top: 18px;
+    right: -325px;
+   display: block;
+    
+  }
+  .dropbtn {
+  
+  color: white;
+  border: none;
+  cursor: pointer;
+ 
+  }
+  
+  
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  
+  }
+  
+  .dropdown-content {
+    backdrop-filter: saturate(180%) blur(7px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: rgba(9, 0, 53, 0.404);
+    text-align: center  ;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  z-index: 1;
+  top: 90px;
+    position: fixed;
+    border-radius: 10px;
+    right: 0;
+  }
+  .sticky .dropdown-content{
+    right: 0px;
+  }
+  
+  .dropdown-content a {
+    width: 100%;
+    
+  text-align: center  ;
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  li {
+    text-align: center;
+    padding: 3px 20px;}
+
+  
+  
+  .show {display: block;}
+  
+
+
+
+
+ 
+  .row{
+    margin: 140px 0px 0px 0px;}
+    .main{ width: 100%;}
+
+
+    .name{
+        margin-left:30px;
+        font-size:60px ;    
+      }
+    .line{left: 30px;}
+    .line2{left: 72px;}
+    .main p {
+        font-size: 22px;
+        left: 72px;
+        margin: 10px;}
+      .main2{
+        width: 100%;
+        padding: 20px 20px;}
+    
+      .prjText{
+        padding: 20px 30px;
+        top: 100px;
+      }
+      .projects{
+        top: 365px;
+      }
+      .pro{
+        margin: 0;
+        font-size: 20px
+      }
+      .LeftMenu button {
+        float: left;
+        width: 71px;
+        
+        border-radius: 10px;
+        backdrop-filter: saturate(180%) blur(8px);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background: rgba(46, 3, 75, 0.404);
+        font-size:8px ;
+        
+      
+      }
+      .LeftMenu{
+        width: 100%;
+       height: 52px;
+       position: relative;
+      }
+      .LeftMenucontent {
+        padding: 0px 5px 10px 5px;
+    }
+    .LeftMenucontent li {
+      height: 270px;}
+
+
+
+
+      .row1{
+        padding: 5px 5px 10px 5px;
+        justify-content: center;}
+    
+        .video-grid {
+          display: grid;
+          grid-template-columns: 1.5fr;
+          grid-template-rows: repeat(5, 1fr);
+          margin: 0 -2em;
+      }
+      
+  .video-item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .video-item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .video-item:nth-child(3) {
+    grid-column: 1/ 2;
+    grid-row: 3 / 4;
+  }
+
+  
+  .video-item:nth-last-child(-n+1):first-child,
+  .video-item:nth-last-child(-n+1):first-child ~ .video-item {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+
+
+
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 90%;
+    padding: 0 4px;
+  }
+
+
+
+
+
+
+
+
+      .container{margin-left: 0px;}
+        .icons{
+          top: 510px;
+          left: 30px;
+          width: 100%;
+        }
+
+        .forms{
+          right: 0;
+          margin-bottom: 20px;
+       }   
+        input ,textarea{
+        
+          color: white;
+          height: 40px;
+          
+        }
+
+        input[type=fname], input[type=lname] {
+          width: 100%;
+        }
+       
+        input[type=submit]{
+  
+          width: 100%;
+        }
+
+        input[type=submit]:hover{
+          transition: 0.4s;
+          background: rgba(146, 71, 175, 0.578);
+        }
+        textarea{
+          width: 100%;
+          height: 100px;
+          border-radius: 5px;
+        
+        }
+
+}
